@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Project </title>
+    <link rel="stylesheet" href="./output/tailwind.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+</head>
+<body class="font-poppins text-gray-600 ">
+
+    <!--start-----------Header nav bar ----------------- -->
+    <nav class="bg-mountainBlack shadow-2xl shadow-slate-300">
+        <div class="container mx-auto px-4 py-1 flex items-center">
+            <a href="#">
+                <img src="/images/dark-logo.png" alt="light-logo">
+            </a>
+            
+            <div class="ml-12 flex">
+                <a href="#" class="flex items-center font-semibold text-white text-md  hover:text-mountainGreen transition">
+                    <span class="mr-2">
+                        <i class="fas fa-home"></i>
+                    </span>
+                    Home
+                </a>
+            </div>
+
+            <div class="ml-12 flex">
+                <a href="#" class="flex items-center font-semibold text-white text-md  hover:text-mountainGreen transition">
+                    <span class="mr-2">
+                        <i class="fas fa-file-alt "></i>
+                    </span>
+                    About
+                </a>
+            </div>
+
+            <div class="ml-12 mr-12 flex">
+                <a href="#" class="flex items-center font-semibold text-white text-md  hover:text-mountainGreen transition">
+                    <span class="mr-2">
+                        <i class="fas fa-phone"></i>
+                    </span>
+                    Contact
+                </a>
+            </div>
+        
+
+            <div class="relative ml-auto ">
+                <span class="absolute left-3 top-2 text-sm text-gray-600 ">
+                    <i class="fas fa-search"></i>
+                </span>
+                <input type="text" placeholder="Zoeken..." class="block w-full rounded-3xl pl-11 pr-2 py-2 focus:outline-none bg-gray-20 text-sm text-gray-600 shadow-sm  shadow-mountainGreen"/>
+            </div>
+
+
+            <div class="ml-5">
+
+                <a href="#" class="flex item-center font-semibold text-md text-white hover:text-mountainGreen transition ">
+
+                    <span class="mr-2 ">
+                        <i class="far fa-user">
+
+                        </i>
+                    </span>
+                    Login/Registreer
+                </a>
+            </div>
+
+
+        </div>
+    </nav>
+    <!--end-----------Header nav bar ----------------- -->
+
+<div class="py-12 bg-gray-200">
+    <div class="container mx-auto px-4 flex ">
+        <div class="w-3/12">
+            <div class="bg-white shadow-sm shadow-white rounded-xl p-4  ">
+                <h3 class="text-xl font-semibold text-gray-700 font-roboto">
+                    Category
+                </h3>
+
+                <!-- Start category sidebar -->
+                <div class="text-gray-700 space-y-2 mt-4">
+                    <a href="#" class="flex items-center font-semibold leading-4 hover:text-mountainGreen transition uppercase ">
+                        <span class="mr-2">
+                            <i class="far fa-folder-open"></i>
+                        </span>
+                        <span>Beauty</span>
+                        <span class="font-normal ml-auto">(12)</span>
+                    </a>
+
+                    <a href="#" class="flex items-center font-semibold leading-4 hover:text-mountainGreen transition uppercase ">
+                        <span class="mr-2">
+                            <i class="far fa-folder-open"></i>
+                        </span>
+                        <span>Business</span>
+                        <span class="font-normal ml-auto">(5)</span>
+                    </a>
+
+                    <a href="#" class="flex items-center font-semibold leading-4 hover:text-mountainGreen transition uppercase ">
+                        <span class="mr-2">
+                            <i class="far fa-folder-open"></i>
+                        </span>
+                        <span>Fashion</span>
+                        <span class="font-normal ml-auto">(8)</span>
+                    </a>
+
+                    <a href="#" class="flex items-center font-semibold leading-4 hover:text-mountainGreen transition uppercase ">
+                        <span class="mr-2">
+                            <i class="far fa-folder-open"></i>
+                        </span>
+                        <span>Food</span>
+                        <span class="font-normal ml-auto">(14)</span>
+                    </a>
+
+                    <a href="#" class="flex items-center font-semibold leading-4 hover:text-mountainGreen transition uppercase ">
+                        <span class="mr-2">
+                            <i class="far fa-folder-open"></i>
+                        </span>
+                        <span>Nature</span>
+                        <span class="font-normal ml-auto">(3)</span>
+                    </a>
+
+                    <a href="#" class="flex items-center font-semibold leading-4 hover:text-mountainGreen transition uppercase ">
+                        <span class="mr-2">
+                            <i class="far fa-folder-open"></i>
+                        </span>
+                        <span>Music</span>
+                        <span class="font-normal ml-auto">(4)</span>
+                    </a>
+
+                    <a href="#" class="flex items-center font-semibold leading-4 hover:text-mountainGreen transition uppercase ">
+                        <span class="mr-2">
+                            <i class="far fa-folder-open"></i>
+                        </span>
+                        <span>News</span>
+                        <span class="font-normal ml-auto">(8)</span>
+                    </a>
+
+                    <a href="#" class="flex items-center font-semibold leading-4 hover:text-mountainGreen transition uppercase ">
+                        <span class="mr-2">
+                            <i class="far fa-folder-open"></i>
+                        </span>
+                        <span>People</span>
+                        <span class="font-normal ml-auto">(9)</span>
+                    </a>
+
+                    <a href="#" class="flex items-center font-semibold leading-4 hover:text-mountainGreen transition uppercase ">
+                        <span class="mr-2">
+                            <i class="far fa-folder-open"></i>
+                        </span>
+                        <span>Sports</span>
+                        <span class="font-normal ml-auto">(0)</span>
+                    </a>
+                    
+                    <a href="#" class="flex items-center font-semibold leading-4 hover:text-mountainGreen transition uppercase ">
+                        <span class="mr-2">
+                            <i class="far fa-folder-open"></i>
+                        </span>
+                        <span>Technology</span>
+                        <span class="font-normal ml-auto">(11)</span>
+                    </a>
+
+                </div>
+               <!-- End category sidebar -->
+
+            </div>
+
+            <!-- Start random post -->
+            <div class="bg-white shadow-sm shadow-white rounded-xl p-4 mt-6 ">
+                <h3 class="text-xl font-semibold text-gray-700 font-roboto">
+                    Random post
+                </h3>
+
+                <div class="mt-4">
+                    <a href="#" class="flex group mt-4 ">
+                        <div class="flex-shrink-0">
+                            <img src="./images/pic1.png" class="h-14 w-20 rounded object-cover hover:brightness-200">
+                        </div>
+                        <div class="flex-grow pl-3 ">
+                            <h5 class="text-md leading-5 block font-roboto font-semibold transition group-hover:text-mountainGreen">
+                                Team Bitbose geared up to attend Blockchain
+                            </h5>
+                            <div class="flex text-gray-400 text-sm items-center">
+
+                                <span class="mr-1 text-xs">
+                                    <i class="far fa-clock"></i>
+                                    May 29, 2022
+
+                                </span>
+                            </div>
+
+                        </div>
+                    </a>
+
+                    <a href="#" class="flex group mt-4 ">
+                        <div class="flex-shrink-0">
+                            <img src="./images/pic2.png" class="h-14 w-20 rounded object-cover hover:brightness-200">
+                        </div>
+                        <div class="flex-grow pl-3 ">
+                            <h5 class="text-md leading-5 block font-roboto font-semibold transition group-hover:text-mountainGreen">
+                                After a carebbean Hurricane
+                            </h5>
+                            <div class="flex text-gray-400 text-sm items-center">
+
+                                <span class="mr-1 text-xs">
+                                    <i class="far fa-clock"></i>
+                                    May 29, 2022
+
+                                </span>
+                            </div>
+
+                        </div>
+                    </a>
+
+                    <a href="#" class="flex group mt-4 ">
+                        <div class="flex-shrink-0">
+                            <img src="./images/pic3.png" class="h-14 w-20 rounded object-cover hover:brightness-200">
+                        </div>
+                        <div class="flex-grow pl-3 ">
+                            <h5 class="text-md leading-5 block font-roboto font-semibold transition group-hover:text-mountainGreen">
+                                California sheriff's deputy shot
+                            </h5>
+                            <div class="flex text-gray-400 text-sm items-center">
+
+                                <span class="mr-1 text-xs">
+                                    <i class="far fa-clock"></i>
+                                    May 29, 2022
+
+                                </span>
+                            </div>
+
+                        </div>
+                    </a>
+
+                    <a href="#" class="flex group mt-4 ">
+                        <div class="flex-shrink-0">
+                            <img src="./images/pic4.png" class="h-14 w-20 rounded object-cover hover:brightness-200">
+                        </div>
+                        <div class="flex-grow pl-3 ">
+                            <h5 class="text-md leading-5 block font-roboto font-semibold transition group-hover:text-mountainGreen">
+                                Team Bitbose geared up to attend
+                            </h5>
+                            <div class="flex text-gray-400 text-sm items-center">
+
+                                <span class="mr-1 text-xs">
+                                    <i class="far fa-clock"></i>
+                                    May 29, 2022
+
+                                </span>
+                            </div>
+
+                        </div>
+                    </a>
+
+                    <a href="#" class="flex group mt-4 ">
+                        <div class="flex-shrink-0">
+                            <img src="./images/pic5.png" class="h-14 w-20 rounded object-cover hover:brightness-200">
+                        </div>
+                        <div class="flex-grow pl-3 ">
+                            <h5 class="text-md leading-5 block font-roboto font-semibold transition group-hover:text-mountainGreen">
+                                Team Bitbose geared up to attend Blockchain
+                            </h5>
+                            <div class="flex text-gray-400 text-sm items-center">
+
+                                <span class="mr-1 text-xs">
+                                    <i class="far fa-clock"></i>
+                                    May 29, 2022
+
+                                </span>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+
+
+
+            </div>
+            <!-- End random post -->
+
+        </div>
+
+        <div class="xl:w-6/12 lg:w-9/12 w-full xl:ml-6 lg:mr-6">
+
+            <div class="flex bg-white px-3 py-4 justify-between items-center rounded-sm">
+                <h5 class=" text-base uppercase font-semibold font-roboto">Business</h5>
+
+                <a href="#" class="text-white py-1 px-3 rounded-xl uppercase text-sm bg-mountainGreen border border-mountainGreen hover:text-mountainGreen hover:bg-transparent transition">
+                    See more 
+                </a>
+            </div>
+
+              <!-- -------------------start main blog post----------------- -->
+        <div class="rounded-sm overflow-hidden bg-white shadwo-sm">
+            <a href="#" class="block rounded-md overflow-hidden ">
+                <img src="./images/pic7.png" class="w-full h-96 object-cover transform hover:scale-110 transition duration-500">
+            </a>
+
+
+            <div class="p-4 pb-5 ">
+                <a href="#">
+                    <h2 class="block text-2xl font-semibold text-gray-700 hover:text-blue-500 transition font-roboto">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, quis?
+                    </h2>
+                </a>
+
+                <p class="text-gray-500 text-sm mt-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dolore praesentium sint dolores, a deleniti tempore facere quisquam consequatur accusantium quos, itaque mollitia nesciunt eum officia nobis blanditiis. Soluta, adipisci.
+                </p>
+
+                <div class="mt-3 flex space-x-4">
+
+                    <div class="flex text-gray-400 text-sm items-center">
+                        <span class="mr-1 text-xs">
+                            <i class="far fa-user"></i>
+                            Blogging Tips
+                        </span>
+
+                    </div>
+
+
+                    <div class="flex text-gray-400 text-sm items-center">
+                        <span class="mr-1 text-xs">
+                            <i class="far fa-clock"></i>
+                            Junly 15, 2022
+                        </span>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- -------------------end main blog post----------------- -->
+<!-- -------------------start all post----------------- -->
+
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+    <div class="rounded-xl bg-white p-4 pb-5 shadow-sm">
+        <a href="#" class="block rounded-md overflow-hidden ">
+            <img src="./images/pic7.png" class="w-full h-60 object-cover transform hover:scale-110 transition duration-500">
+        </a>
+        <div class="mt-3">
+            <h2 class="block text-xl font-semibold text-gray-700 hover:text-blue-500 transition font-roboto">
+                Lorem ipsum dolor sit, amet consectelit. Fuga, quis?
+            </h2>
+
+            <div class="mt-3 flex space-x-4">
+
+                <div class="flex text-gray-400 text-sm items-center">
+                    <span class="mr-1 text-xs">
+                        <i class="far fa-user"></i>
+                        Blogging Tips
+                    </span>
+
+                </div>
+
+
+                <div class="flex text-gray-400 text-sm items-center">
+                    <span class="mr-1 text-xs">
+                        <i class="far fa-clock"></i>
+                        Junly 15, 2022
+                    </span>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="rounded-xl bg-white p-4 pb-5 shadow-sm">
+        <a href="#" class="block rounded-md overflow-hidden ">
+            <img src="./images/pic4.png" class="w-full h-60 object-cover transform hover:scale-110 transition duration-500">
+        </a>
+        <div class="mt-3">
+            <h2 class="block text-xl font-semibold text-gray-700 hover:text-blue-500 transition font-roboto">
+                Lorem ipsum dolor sit, amet consectelit. Fuga, quis?
+            </h2>
+
+            <div class="mt-3 flex space-x-4">
+
+                <div class="flex text-gray-400 text-sm items-center">
+                    <span class="mr-1 text-xs">
+                        <i class="far fa-user"></i>
+                        Blogging Tips
+                    </span>
+
+                </div>
+
+
+                <div class="flex text-gray-400 text-sm items-center">
+                    <span class="mr-1 text-xs">
+                        <i class="far fa-clock"></i>
+                        Junly 15, 2022
+                    </span>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="rounded-xl bg-white p-4 pb-5 shadow-sm">
+        <a href="#" class="block rounded-md overflow-hidden ">
+            <img src="./images/pic5.png" class="w-full h-60 object-cover transform hover:scale-110 transition duration-500">
+        </a>
+        <div class="mt-3">
+            <h2 class="block text-xl font-semibold text-gray-700 hover:text-blue-500 transition font-roboto">
+                Lorem ipsum dolor sit, amet consectelit. Fuga, quis?
+            </h2>
+
+            <div class="mt-3 flex space-x-4">
+
+                <div class="flex text-gray-400 text-sm items-center">
+                    <span class="mr-1 text-xs">
+                        <i class="far fa-user"></i>
+                        Blogging Tips
+                    </span>
+
+                </div>
+
+
+                <div class="flex text-gray-400 text-sm items-center">
+                    <span class="mr-1 text-xs">
+                        <i class="far fa-clock"></i>
+                        Junly 15, 2022
+                    </span>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="rounded-xl bg-white p-4 pb-5 shadow-sm">
+        <a href="#" class="block rounded-md overflow-hidden ">
+            <img src="./images/pic6.png" class="w-full h-60 object-cover transform hover:scale-110 transition duration-500">
+        </a>
+        <div class="mt-3">
+            <h2 class="block text-xl font-semibold text-gray-700 hover:text-blue-500 transition font-roboto">
+                Lorem ipsum dolor sit, amet consectelit. Fuga, quis?
+            </h2>
+
+            <div class="mt-3 flex space-x-4">
+
+                <div class="flex text-gray-400 text-sm items-center">
+                    <span class="mr-1 text-xs">
+                        <i class="far fa-user"></i>
+                        Blogging Tips
+                    </span>
+
+                </div>
+
+
+                <div class="flex text-gray-400 text-sm items-center">
+                    <span class="mr-1 text-xs">
+                        <i class="far fa-clock"></i>
+                        Junly 15, 2022
+                    </span>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</div>
+<!-- -------------------end all post----------------- -->
+        </div>
+
+      
+
+        <div class="w-3/12 bg-white shadow-sm shadow-white rounded-xl py-12">
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
