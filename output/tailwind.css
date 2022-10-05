@@ -774,6 +774,10 @@ video {
   border-width: 1px;
 }
 
+.border-t {
+  border-top-width: 1px;
+}
+
 .border-mountainGreen {
   --tw-border-opacity: 1;
   border-color: rgb(0 200 118 / var(--tw-border-opacity));
@@ -862,6 +866,10 @@ video {
 
 .pb-5 {
   padding-bottom: 1.25rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .font-poppins {
