@@ -18,7 +18,7 @@
 
     <!--start-----------Header nav bar ----------------- -->
     <nav class="bg-mountainBlack shadow-2xl shadow-slate-300">
-        <div class="container mx-auto px-4 py-1 flex items-center">
+        <div class="container mx-auto px-4 py-1 flex items-center md:space-x-32">
             <a href="#">
                 <img src="./images/dark-logo.png" alt="dark-logo">
             </a>
@@ -688,7 +688,7 @@
 
       <!-----------Start Mobile Menu---------------- -->
       <div class="fixed w-full h-full bg-black bg-opacity-25 left-0 top-0 opacity-0 invisible transition-all duration-500 xl:hidden" id="sidebar_wrapper">
-        <div class="fixed top-0 w-72 h-full bg-white shadow-sm flex flex-col transition duration-500 -left-80 " id="sidebar">
+        <div class="fixed top-0 w-72 h-full bg-white shadow-sm flex flex-col transition-all duration-500 -left-80 " id="sidebar">
             <p> asdfsdf</p>
         </div>
       </div>
@@ -700,6 +700,26 @@
     </p>
 
 </footer>
+
+
+<script>
+    document.querySelector('#open_sidebar').addEventListener('click', function() {
+        document.querySelector('#sidebar').classList.remove('-left-80')
+        document.querySelector('#sidebar').classList.add('left-0')
+        document.querySelector('#sidebar_wrapper').classList.remove('opacity-0')
+        document.querySelector('#sidebar_wrapper').classList.remove('invisible')
+
+        
+    })
+    document.body.addEventListener('click', function(e) {
+        if(e.target.id === 'sidebar_wrapper') {
+            document.querySelector('#sidebar').classList.add('-left-80')
+        document.querySelector('#sidebar').classList.remove('left-0')
+        document.querySelector('#sidebar_wrapper').classList.add('opacity-0')
+        document.querySelector('#sidebar_wrapper').classList.add('invisible')
+        }
+    })
+</script>
 
 
 
