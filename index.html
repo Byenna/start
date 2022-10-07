@@ -23,7 +23,7 @@
                 <img src="./images/dark-logo.png" alt="dark-logo">
             </a>
             
-            <div class="ml-12 flex">
+            <div class="ml-12 lg:flex space-x-5 hidden ">
                 <a href="#" class="flex items-center font-semibold text-white text-md  hover:text-mountainGreen transition">
                     <span class="mr-2">
                         <i class="fas fa-home"></i>
@@ -32,7 +32,7 @@
                 </a>
             </div>
 
-            <div class="ml-12 flex">
+            <div class="ml-12 lg:flex space-x-5 hidden ">
                 <a href="#" class="flex items-center font-semibold text-white text-md  hover:text-mountainGreen transition">
                     <span class="mr-2">
                         <i class="fas fa-file-alt "></i>
@@ -41,7 +41,7 @@
                 </a>
             </div>
 
-            <div class="ml-12 mr-12 flex">
+            <div class="ml-12 mr-12 lg:flex space-x-5 hidden ">
                 <a href="#" class="flex items-center font-semibold text-white text-md  hover:text-mountainGreen transition">
                     <span class="mr-2">
                         <i class="fas fa-phone"></i>
@@ -51,7 +51,7 @@
             </div>
         
 
-            <div class="relative ml-auto ">
+            <div class="relative ml-auto hidden lg:block ">
                 <span class="absolute left-3 top-2 text-sm text-gray-600 ">
                     <i class="fas fa-search"></i>
                 </span>
@@ -72,7 +72,7 @@
                 </a>
             </div>
 
-            <div class="text-xl text-white cursor-pointer ml-4 xl:hidden block hover:text-mountainGreen transition ">
+            <div class="text-xl text-white cursor-pointer ml-4 xl:hidden block hover:text-mountainGreen transition " id="open_sidebar"> 
                 <i class="fas fa-bars"></i>
 
             </div>
@@ -82,7 +82,7 @@
     <!--end---Header nav bar ----------------- -->
 
 <div class="py-12 bg-gray-200">
-    <div class="container mx-auto px-4 flex-wrap lg:flex-nowrap ">
+    <div class="container mx-auto px-4 flex flex-wrap lg:flex-nowrap ">
         <div class="lg:w-3/12 hidden xl:block">
             <div class="bg-white shadow-sm shadow-white rounded-xl p-4  ">
                 <h3 class="text-xl font-semibold text-gray-700 font-roboto">
@@ -480,7 +480,6 @@
 <!-- -------------------end all post----------------- -->
         </div>
 
-        
         <div class="lg:w-3/12 w-full mt-8 lg:mt-0">
                 <!--start social Plugin ----------------- -->
 
@@ -687,8 +686,14 @@
     </div>
 </div>
 
-
-<footer class="border-t py-4">
+      <!-----------Start Mobile Menu---------------- -->
+      <div class="fixed w-full h-full bg-black bg-opacity-25 left-0 top-0 opacity-0 invisible transition-all duration-500 xl:hidden" id="sidebar_wrapper">
+        <div class="fixed top-0 w-72 h-full bg-white shadow-sm flex flex-col transition duration-500 -left-80 " id="sidebar">
+            <p> asdfsdf</p>
+        </div>
+      </div>
+      <!-----------End Mobile Menu--------------- -->
+      <footer class="border-t py-4">
     <p class="text-sm text-center"> Copyright © 2022 
         <span class="font-semibold">Mountain-it</span>
        All rights reserved
